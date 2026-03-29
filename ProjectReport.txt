@@ -1,0 +1,38 @@
+Title: SMS Spam Detection System
+
+Introduction:
+Spam messages are a common problem in today's digital communication. These messages can be annoying and sometimes harmful. The purpose of this project is to build a system that can automatically classify SMS messages as spam or ham (normal message).
+
+Objective:
+The main objective of this project is to use machine learning techniques to detect spam messages with good accuracy.
+
+Dataset:
+The dataset used is the SMS Spam Collection Dataset. It contains labeled messages as spam or ham. The dataset was downloaded using KaggleHub.
+
+Methodology:
+First, the dataset was loaded and unnecessary columns were removed. The labels were converted into numerical form (spam = 1, ham = 0).
+
+Text preprocessing was done in multiple steps:
+- Converted all text to lowercase
+- Removed punctuation marks
+- Removed numbers
+- Tokenized the text
+- Removed stopwords using NLTK
+- Applied lemmatization to reduce words to their base form
+
+After preprocessing, the text data was converted into numerical vectors using TF-IDF vectorization.
+
+The dataset was then split into training and testing sets using an 80-20 ratio.
+
+A Multinomial Naive Bayes model was used for classification. The model was trained on the training data and tested on the testing data.
+
+Results:
+The model achieved a good accuracy score on the test dataset. This shows that Naive Bayes works well for text classification problems like spam detection.
+
+Conclusion:
+This project demonstrates how natural language processing and machine learning can be combined to solve real-world problems like spam detection. Although the model is simple, it performs effectively and can be improved further using advanced techniques.
+
+Future Scope:
+- Use more advanced models like Logistic Regression or Deep Learning
+- Improve preprocessing techniques
+- Deploy the model as a web application
